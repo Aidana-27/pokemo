@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.hero {
+    background-image: url(img/menu.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    padding: 0 20px 0;
+
+}
+
+.menu {
+    display: flex;
+    align-items: start;
+    margin: 20px;
+}
+
+.go {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.name {
+    color: #FFF;
+    font-size: 71px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 1px;
+}
+
+.text {
+    color: #FFF;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-top: 30px;
+}
+
+.btn {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 160px;
+    height: 60px;
+    border-radius: 4px;
+    background: #5AB963;
+    cursor: pointer;
+    margin: 100px auto 140px;
+}
+
+.card {
+    display: flex;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.zero {
+    width: 0;
+    height: 0;
+    color: #FFF;
+    margin: 30px 40px 30px;
+}
+
+p {
+    padding: 20px;
+}
+
+.bdr {
+    border-radius: 4px;
+    border: 2px solid;
+    width: 120px;
+    height: 46px;
+    text-align: center;
+    padding: 11px 17px 11px 17px;
+    margin-top: 10px;
+}

@@ -1,0 +1,52 @@
+body {
+    background-color: #FF5B00;
+    font-family: 'Etelka Wide Medium Pro'
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1232px;
+}
+
+/* header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.header__link{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-left:51px;
+}
+
+.header__burger{
+    display: flex;
+    margin-top: 10px;
+}
+
+
+
+
+/* header */

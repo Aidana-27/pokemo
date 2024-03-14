@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéAPI Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        #pokemonInfo {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PokéAPI Explorer</h1>
+        <input type="text" id="searchInput" placeholder="Введите имя покемона">
+        <div id="pokemonInfo"></div>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const pokemonInfo = document.getElementById('pokemonInfo');
+
+
+        async function getPokemonInfo(name) {
+            try {
+                const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}`);
+                const data = await response.json();
+
+                pokemonInfo.innerHTML = `
+                    <h2>${data.name}</h2>
+                    <img src="${data.sprites.front_default}" alt="${data.name}">
+                    <p>Тип: ${data.types.map(type => type.type.name).join(', ')}</p>
+                    <p>Вес: ${data.weight}</p>
+                    <p>Рост: ${data.height}</p>
+                `;
+            } catch (error) {
+                pokemonInfo.innerHTML = `<p>Покемон с именем "${name}" не найден.</p>`;
+            }
+        }
+
+
+        searchInput.addEventListener('input', (event) => {
+            const name = event.target.value.trim();
+            if (name) {
+                getPokemonInfo(name);
+            } else {
+                pokemonInfo.innerHTML = '';
+            }
+        });
+    </script>
+</body>
+</html>

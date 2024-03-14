@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Etelka Wide Medium Pro';
+    src: url('./EtelkaWideMediumPro.eot');
+    src: url('./EtelkaWideMediumPro.eot?#iefix') format('embedded-opentype'),
+        url('./EtelkaWideMediumPro.woff2') format('woff2'),
+        url('./EtelkaWideMediumPro.woff') format('woff'),
+        url('./EtelkaWideMediumPro.ttf') format('truetype'),
+        url('./EtelkaWideMediumPro.svg#EtelkaWideMediumPro') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

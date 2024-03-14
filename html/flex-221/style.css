@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(131, 131, 235);
+    width: 100vw;
+    height: 100vh;
+    padding: 150px 100px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.link {
+    background-color: white;
+    width: 150px;
+    height: 375px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.one {
+    background-color: white;
+    width: 250px;
+    height: 100px;
+}
+
+.two {
+    background-color: white;
+    width: 350px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+.zero {
+    display: flex;
+    margin-top: 10px;  
+}
+
+.green {
+    background-color: white;
+    width: 350px;
+    height: 125px;
+}
+
+.four {
+    display: flex;
+    justify-content: space-between;
+}
+
+.red {
+    background-color: white;
+    width: 170px;
+    height: 125px;
+    margin-top: 10px;
+}
+
+.fife {
+    background-color: white;
+    width: 250px;
+    height: 260px;
+    margin-left: 10px;
+}

@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/* header */
+.header{
+    background-color: rgb(127, 242, 255);
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.header__inp{
+    width: 200px;
+    
+}
+
+
+
+
+
+

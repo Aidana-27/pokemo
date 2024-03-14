@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1238px;
+}
+.box {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7, 1fr);
+    height: 616px;
+    gap: 16px;
+}
+.grid{
+padding: 50px 0;
+background-color: rgb(135, 233, 135);
+}
+.food{
+    border-radius: 30px;
+    overflow: hidden;
+}
+.food img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-1{
+    grid-area: 1/1/6/2;
+}
+.box-2{
+    grid-area: 1/2/4/3
+}
+.box-3{
+    grid-area: 1/3/6/4;
+}
+.box-4{
+    grid-area: 1/4/4/5;
+}
+.box-5{
+    grid-area: 6/1/8/2;
+}
+.box-6{
+    grid-area: 4/2/8/3;
+}
+.box-7{
+    grid-area: 6/3/8/4;
+}
+.box-8{
+    grid-area: 4/4/8/5;
+}

@@ -1,0 +1,30 @@
+@media(max-width:1050px){
+   .hero{
+    background-size: 600px 600px;
+   }
+
+   .top__dog{
+    right: 0;
+   }
+   .box__box{
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+   }
+
+   .today__human{
+    left: -150px;
+   }
+   .today__human1{
+    right: 100px;
+   }
+
+   .footer__box{
+    column-gap: 80px;
+   }
+
+   .footer__end{
+    gap: 400px;
+   }
+
+}
+

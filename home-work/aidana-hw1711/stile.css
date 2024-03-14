@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero {
+    background-image: url(img/most.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    background-color: #323232;
+    padding: 20px 0;
+    border-right:1px;
+}
+
+.link1 {
+    padding: 24px;
+    color: #C7AA8B;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #000;
+}
+
+.link {
+    margin-left: 60px;
+    color: #EDEDED;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.one {
+    padding-left: 350px;
+}
+
+.img {
+    margin-left: 20px;
+}
+
+.box {
+    width: 1px;
+    height: 60px;
+    flex-shrink: 0;
+    background: #4D4D4D;
+}
+
+.keep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.title {
+    color: #FFF;
+    font-size: 78px;
+    line-height: 66px;
+    text-transform: uppercase;
+
+}
+
+.text {
+    font-family: 'Vollkorn SC', serif;
+    color: rgba(255, 255, 255, 0.81);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 70px;
+}
+
+.stone {
+    color: #EDEDED;
+    font-size: 24px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.btn {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: 134px;
+    height: 40px;
+    border: 2px solid #FFF;
+    background: rgba(77, 77, 77, 0.20);
+    margin: 50px 0;
+}
+
+.pro {
+    padding-top: 40px;
+}
+.q{
+    display: flex;
+    justify-content: center;
+    margin-top:70px;
+ 
+}
+
+.two {
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    background: #FFF;
+    margin-left: 6px;
+}
+.tree{
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.40);
+    margin-left: 6px;
+}

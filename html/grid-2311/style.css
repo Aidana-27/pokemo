@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1210px;
+}
+
+.main {
+    padding: 88px 0 95px;
+}
+
+.main__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.main__img {
+    height: 264px;
+}
+
+.main__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__contet {
+    background: #F3F3F3;
+    padding: 29px;
+}
+
+.main__info {
+    display: flex;
+    margin: 22px;
+}
+
+.main__title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.main__item {
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 20px;
+    max-width: 89px;
+}
+
+.main__bold {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.main__price {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.main__btn {
+    width: 380px;
+    height: 65px;
+    background-color: #6EBBD3;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 0 0 10px 10px;
+}
