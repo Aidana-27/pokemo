@@ -28,6 +28,7 @@ function Header({setSearch}) {
 
   const getById = (e) => {
     if (e.key === "Enter" && e.target.value) {
+      e.preventDefault()
         setSearch(e.target.value)
     }
   }

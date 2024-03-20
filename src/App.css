@@ -61,6 +61,14 @@ body {
     margin-top: 20px ;
 }
 
+.hero__card{
+    transition: transform 0.1s ease
+}
+
+.hero__card:hover{
+    transform: scale(1.1)
+}
+
 .hero__button{
    height: 50px;
    width: 250px;
@@ -89,6 +97,11 @@ body {
 .swiper__flex {
     display: flex;
     position: relative;
+    transition: transform 0.3s ease
+}
+
+.swiper__flex:hover {
+    transform: scale(1.1)
 }
 
 .swiper__name {

@@ -13,21 +13,18 @@ const Slider = () => {
         axios("https://pokeapi.co/api/v2/pokemon?limit=104&offset=0")
             .then(rec => setInfo(rec.data.results))
     }, [setInfo])
-    console.log(info);
-
-
-
 
     const getRandomInt=(min, max)=>{
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
+    
     let count = 10
     let randomNumbers = [];
     for (let i = 0; i < count; i++) {
         randomNumbers.push(getRandomInt(0, 100));
     }
 
-    console.log(randomNumbers);
+
 
 
     return (
