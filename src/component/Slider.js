@@ -72,7 +72,7 @@ const Slider = () => {
                                 <div className='swiper__flex'>
                                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${el}.png`} />
                                     {info[el] && (<p className='swiper__name'>
-                                        {info[el - 1].name}
+                                        {info[el - 1]?.name}
                                     </p>)}
                                 </div>
                             </SwiperSlide>

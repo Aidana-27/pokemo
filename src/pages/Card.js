@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 
+
 const Card = ({el,index,setDetail,search}) => {
   const[getId,setGetId]=useState("")
  const handleClick = () => {

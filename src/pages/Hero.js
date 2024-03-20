@@ -2,15 +2,16 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Card from './Card';
 import { NavLink } from 'react-router-dom';
+import Spinner from '../assets/imeges/spinner2.svg'
 
 function Hero({setDetail,search}) {
-    const [str,setStr]=useState([])
+    const [spinner,setSpinner]=useState([])
     const totalImages = 104;
     const imagesPerLoad = 12; 
     const [visibleImages, setVisibleImages] = useState(imagesPerLoad);
     useEffect(()=>{
       axios("https://pokeapi.co/api/v2/pokemon?limit=104&offset=0")
-      .then(({data})=>setStr(data.results))
+      .then(({data})=>setSpinner(data.results))
     },[])
 
 
@@ -19,7 +20,7 @@ const handleShowMoreImages = () => {
 };
 
   return (
-<>
+<>{spinner.length?
 <section class="hero max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
     <div class="text-center pb-12">
         <h2 class="text-base font-bold text-indigo-600">
@@ -30,7 +31,7 @@ const handleShowMoreImages = () => {
         </h1>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-    {str.slice(0, visibleImages).map((el, index) => (
+    {spinner.slice(0, visibleImages).map((el, index) => (
             <NavLink to="/detail">
               <Card key={index} el={el} index={index} setDetail={setDetail} search={search}/>
             </NavLink>
@@ -39,7 +40,9 @@ const handleShowMoreImages = () => {
     {visibleImages < totalImages && (
         <button className='hero__button' onClick={handleShowMoreImages}>Показать еще</button>
       )}
-</section>
+</section>:<div className='header__spinner' >
+    <img src={Spinner} alt='spinner'/>
+    </div>}
 
 
 
