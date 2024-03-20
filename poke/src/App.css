@@ -66,6 +66,20 @@ body {
    width: 250px;
    border-radius: 20px;
    background-color: #6EE7B7;
+   margin: 30px auto 0;
+   text-align: center;
+}
+
+.hero__btn{
+    margin-top: 10px;
+}
+
+.hero__card{
+    transition: transform 0.1s ease
+}
+
+.hero__card:hover{
+    transform: scale(1.1)
 }
 
 /* modal */
@@ -114,10 +128,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease
+
 }
 
-.swiper-slide:hover {
+.swiper__flex{
+        transition: transform 0.3s ease
+}
+
+.swiper__flex:hover {
     transform: scale(1.1)
 }
 

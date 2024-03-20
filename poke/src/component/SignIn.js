@@ -1,20 +1,19 @@
 
 import { NavLink } from 'react-router-dom'
 
-function SignIn({ openSignIn,openRegister,closeBoth}) {
-
+function SignIn({ openSignIn, openRegister, closeBoth }) {
   return (
     <>
-      {openSignIn&& (
+      {openSignIn && (
         <div className="signin min-h-screen flex items-center justify-center w-full dark:bg-transparent-950">
           <div className="bg-white dark:bg-gray-950 shadow-md rounded-lg px-8 py-6 max-w-md">
-             <NavLink to="/">
-			<i
-              className="fa-solid fa-xmark"
-              onClick={closeBoth}
-              style={{ color: "#ffffff" }}
-            ></i>
-			</NavLink>
+            <NavLink to="/">
+              <i
+                className="fa-solid fa-xmark"
+                onClick={closeBoth}
+                style={{ color: "#ffffff" }}
+              ></i>
+            </NavLink>
             <h1 className="text-2xl font-bold text-center mb-4 dark:text-gray-200">Welcome Back!</h1>
             <form action="#">
               <div className="mb-4">
@@ -33,7 +32,7 @@ function SignIn({ openSignIn,openRegister,closeBoth}) {
                   <label htmlFor="remember" className="ml-2 block text-sm text-gray-700 dark:text-gray-300">Remember me</label>
                 </div>
               </div>
-              <button onClick={() => alert("hello")} type="submit" className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Login</button>
+              <button type="submit" className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Login</button>
             </form>
           </div>
         </div>

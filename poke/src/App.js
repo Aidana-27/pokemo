@@ -11,11 +11,11 @@ import Slider from './component/Slider';
 import Detail from './pages/Detail';
 
 
-
 function App() {
   
   const [detail,setDetail]=useState("")
   const [search,setSearch] = useState("")
+
 
 
   return (
