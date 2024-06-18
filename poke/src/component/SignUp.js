@@ -1,7 +1,6 @@
-
 import { NavLink } from 'react-router-dom'
 
-function SignUp({ openRegister, closeBoth }) {
+function SignUp({openRegister, closeBoth }) {
     return (
         <>
             {openRegister && <div class="signup bg-grey-lighter min-h-screen flex flex-col">
@@ -57,7 +56,6 @@ function SignUp({ openRegister, closeBoth }) {
                         </a>.
                     </div>
                 </div>
-
             </div>}
         </>
     )

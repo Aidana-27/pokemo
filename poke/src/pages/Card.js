@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 
@@ -11,7 +11,6 @@ setDetail(el.url)
   axios(el.url)
 .then(({data})=>setGetId(data.id))
 
-console.log(getId);
   return (
     <>
     {String(getId).includes(String(search)) &&
